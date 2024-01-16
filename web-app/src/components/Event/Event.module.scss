@@ -1,0 +1,158 @@
+.event {
+  border-radius: 17px;
+  background: var(--main-bg-color);
+  padding: 21px 20px 17px;
+}
+
+.preview {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 16px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding: 13px 17px 17px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info {
+  margin-top: auto;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.badge {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #000;
+  line-height: normal;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.share {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .6;
+  @media (hover: hover) {
+    transition: opacity .2s ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  @media (hover: none) {
+    transition: opacity .1s ease;
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+
+.name {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.schdule {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  span {
+    display: block;
+    line-height: 18px;
+    background: var(--garient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.reserve {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.countIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.countText {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  padding-left: 2px;
+  background: var(--garient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.type {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+@media (max-width: 1366px) {
+  .event {
+    padding: 10px 15px 15px;
+  }
+  .content {
+    padding: 10px;
+  }
+  .name {
+    margin-bottom: 0;
+  }
+}

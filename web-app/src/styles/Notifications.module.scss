@@ -1,0 +1,16 @@
+.notifications {
+  position: relative;
+  h1 {
+    margin-bottom: 8px;
+  }
+}
+
+.inner {
+  // height: calc(100vh - var(--main-pad-top) - var(--main-pad-bot) - 33px - 8px);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 19px 22px;
+  max-width: calc(var(--create-event-general-width) + 358px + 22px);
+}

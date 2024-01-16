@@ -1,0 +1,23 @@
+.search {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  opacity: .4;
+}
+
+.inp {
+  background: var(--sec-bg-color);
+  padding: 22px 16px 16px 56px;
+  border-radius: 151px;
+  color: #B0B0B0;
+  font-size: 14px;
+  line-height: 18px;
+}

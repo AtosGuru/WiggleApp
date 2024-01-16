@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "47684575283",
+    "project_id": "wiggleapp-85eb7",
+    "storage_bucket": "wiggleapp-85eb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47684575283:android:e4a97f62d42d64ce384346",
+        "android_client_info": {
+          "package_name": "com.wiggle.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47684575283-sm8t7c4i49abdab1t44phvv51fr2umc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo3Zs_ig_In9V5Guknj2n9yc-8xPAmD0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47684575283-sm8t7c4i49abdab1t44phvv51fr2umc5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "47684575283-ivh1qdqa2prpr0r8gkffjuq1m7bsssha.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wiggle.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

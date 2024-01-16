@@ -1,0 +1,31 @@
+.remove {
+  padding: 70px 67px 61px;
+  h3 {
+    max-width: 220px;
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 41px;
+  }
+}
+
+.btns {
+  display: flex;
+  & > * {
+    width: 110px;
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .btns {
+    flex-direction: column;
+    & > * {
+      width: 100%;
+      &:not(:first-child) {
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.controls {
+  border-radius: 17px;
+  background: var(--main-bg-color);
+  width: var(--datepicker-width);
+  padding: 31px 32px;
+  & > button {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .controls {
+    width: 100%;
+    button {
+      width: 100% !important;
+      margin-bottom: 0;
+      & + * {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .controls {
+    padding: 20px;
+    & > button {
+      width: 218px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .controls {
+    width: 100%;
+  }
+}

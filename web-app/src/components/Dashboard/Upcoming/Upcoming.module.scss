@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.nav {
+  display: flex;
+  margin-left: 12px;
+}
+
+.navItem {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  transition: opacity .2s ease;
+}
+
+.navItem + .navItem {
+  margin-left: 7px;
+}
+
+.navItemPrev {
+  transform: rotateY(180deg);
+}
+
+.navItemNext {
+  transform: rotateY(0);
+}
+
+@media (max-width: 480px) {
+  .slider {
+    overflow: visible !important;
+  }
+}

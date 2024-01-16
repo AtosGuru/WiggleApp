@@ -1,0 +1,60 @@
+:root {
+  --white-color: #fff;
+  --body-bg-color: #000;
+  --main-bg-color: #171717;
+  --sec-bg-color: #252525;
+  --garient-color: linear-gradient(180deg, #FFCB52 0%, #FF7B02 100%);
+  --reversed-garient-color: linear-gradient(180deg, #FF7B02 0%, #FFCB52 100%);
+  --error-color: #E91515;
+  --disabled-color: #686868;
+
+  --modal-pad-top: 80px;
+  --modal-pad-right: 80px;
+  --modal-pad-bot: 80px;
+  --modal-pad-left: 50px;
+
+  --main-pad-top: 32px;
+  --main-pad-right: 38px;
+  --main-pad-bot: 24px;
+  --main-pad-left: 30px;
+
+  --sidebar-width: 306px;
+  --chat-width: 350px;
+  --datepicker-width: 282px;
+  --create-event-general-width: 505px;
+  --create-event-new-width: 920px;
+  --create-event-template-width: 1058px;
+
+  @media (max-width: 1440px) { 
+    --modal-pad-top: 60px;
+    --modal-pad-right: 60px;
+    --modal-pad-bot: 60px;
+    --modal-pad-left: 40px;
+    
+    --create-event-new-width: calc(100vw - 60px - var(--sidebar-width) - 57px);
+    --create-event-template-width: calc(100vw - 60px - var(--sidebar-width) - 57px);
+  }
+
+  @media (max-width: 1366px) { 
+    --main-pad-top: 20px;
+    --main-pad-right: 15px;
+    --main-pad-bot: 20px;
+    --main-pad-left: 15px;
+    
+    --chat-width: 320px;
+    --sidebar-width: 280px;
+  }
+
+  @media (max-width: 1024px) { 
+    --main-pad-bot: 100px;
+    
+    --modal-pad-top: 20px;
+    --modal-pad-right: 15px;
+    --modal-pad-bot: 20px;
+    --modal-pad-left: 15px;
+    
+    --sidebar-width: 0;
+    --create-event-new-width: calc(100vw - 20px - 20px);
+    --create-event-template-width: calc(100vw - 20px - 20px);
+  }
+}

@@ -1,0 +1,45 @@
+.burger {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .burger {
+    display: block;
+    width: 38px;
+    height: 8px;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    cursor: pointer;
+    span {
+      position: absolute;
+      right: 0;
+      height: 3px;
+      border-radius: 20px;
+      background: #fff;
+      transition: all .2s ease;
+      &:nth-child(1) {
+        top: 0;
+        width: 100%;
+      }
+      &:nth-child(2) {
+        top: calc(100% - 2px);
+        width: 50%;
+      }
+    }
+  }
+  .active {
+    span {
+      &:nth-child(1) {
+        width: 70%;
+        top: 50%;
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        width: 70%;
+        top: 50%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

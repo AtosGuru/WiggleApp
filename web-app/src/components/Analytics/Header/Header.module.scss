@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 12px;
+  & > h1 {
+    margin-bottom: 7px;
+  }
+}
+
+.text + * {
+  flex: none;
+}
+
+.name {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34.5px;
+  background: var(--garient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .text {
+    margin-bottom: 15px;
+  }
+}

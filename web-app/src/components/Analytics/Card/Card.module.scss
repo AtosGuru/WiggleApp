@@ -1,0 +1,192 @@
+.card {
+  border-radius: 17px;
+  background: var(--main-bg-color);
+  padding: 17px 25px 12px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.count {
+  font-weight: 700;
+  background: var(--garient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.countBig {
+  font-size: 40px;
+  line-height: 34.5px;
+  margin-top: 29px;
+  text-align: center;
+}
+
+.countSmall {
+  margin-top: 7px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.info {
+  margin-top: auto;
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+
+.item {
+  text-align: center;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.label {
+  color: #686868;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.desc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  margin-bottom: auto;
+  span {
+    color: #01B574;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 4px;
+  }
+}
+
+.chart {
+  width: 115px;
+  height: 115px;
+  margin: 20px auto 20px;
+}
+
+.tooltips {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tooltipItem {
+  display: flex;
+  align-items: center;
+}
+
+.tooltipIcon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  margin-right: 11px;
+}
+
+.tooltipName {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(#fff, .7);
+}
+
+.progress {
+  margin-top: 10px;
+}
+
+.progressItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progressItem + .progressItem {
+  margin-top: 8px;
+}
+
+.progressTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 34.5px;
+}
+
+.progressTitle:nth-of-type(1) {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.progressTitle:nth-of-type(2) {
+  order: 2;
+  text-align: center;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.progressCount {
+  order: 2;
+  background: var(--garient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34.5px;
+}
+
+.progressTrack {
+  flex: 1;
+  position: relative;
+  height: 28px;
+}
+
+.progressThumb {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+  background: #686868;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 34.5px;
+}
+
+@media (max-width: 1366px) {
+  .card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .countBig {
+    margin-top: 10px;
+  }
+  .info {
+    padding: 0;
+  }
+  .value {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .progressTitle {
+    line-height: 20px;
+    &:nth-of-type(1) {
+      margin-right: 10px;
+    }
+    &:nth-of-type(2) {
+      margin-left: 10px;
+    }
+  }
+}

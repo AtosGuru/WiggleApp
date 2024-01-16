@@ -1,0 +1,14 @@
+.calendar {
+  flex: 1;
+  border-radius: 17px;
+  background: var(--main-bg-color);
+  padding: 47px 36px 32px;
+}
+
+@media (max-width: 991px) {
+  .calendar {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+}

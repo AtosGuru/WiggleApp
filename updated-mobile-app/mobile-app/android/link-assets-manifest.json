@@ -1,0 +1,61 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Euclid-Bold.ttf",
+      "sha1": "0a69a0d9a4d2f9477582e7f01d84bc1d61c4d01c"
+    },
+    {
+      "path": "assets/fonts/Euclid-Light.ttf",
+      "sha1": "eb1ac25ae5af273c16753fdf76b5a2919f4aac25"
+    },
+    {
+      "path": "assets/fonts/Euclid-Medium.ttf",
+      "sha1": "e97e414467f782f08b7227a89db002829ebb4a52"
+    },
+    {
+      "path": "assets/fonts/Euclid-Regular.ttf",
+      "sha1": "d1ad5380051d486ba359d1a38bb8feb3f2a26fe5"
+    },
+    {
+      "path": "assets/fonts/Euclid-SemiBold.ttf",
+      "sha1": "e89ec5f5d0749a91981e5544c67bb73d8e135445"
+    },
+    {
+      "path": "assets/fonts/Klavika-Bold.otf",
+      "sha1": "a9214262aa3348decb1ebee5761a3403215ecc32"
+    },
+    {
+      "path": "assets/fonts/Klavika-Light.otf",
+      "sha1": "27ed2cc7b0dab84f1ac07ecdb75015b312516820"
+    },
+    {
+      "path": "assets/fonts/Klavika-Medium.otf",
+      "sha1": "90d623de0d2408df885f7cdd37eb447a0834a076"
+    },
+    {
+      "path": "assets/fonts/LeagueSpartan-Bold.ttf",
+      "sha1": "6d89e29970900deb2e7ccf311b29de7e9980a14c"
+    },
+    {
+      "path": "assets/fonts/LeagueSpartan-Light.ttf",
+      "sha1": "a3b4e8f99f7839a3544db8911701b18b970c19cf"
+    },
+    {
+      "path": "assets/fonts/LeagueSpartan-Medium.ttf",
+      "sha1": "25a3b2045642fa4c93d41bdc5f1706d37aa17328"
+    },
+    {
+      "path": "assets/fonts/LeagueSpartan-Regular.ttf",
+      "sha1": "da5d949145fd9576e1049f3b968a64e20a090d44"
+    },
+    {
+      "path": "assets/fonts/LeagueSpartan-SemiBold.ttf",
+      "sha1": "33e260364f621b9f867702e65f575f06dcc25d51"
+    },
+    {
+      "path": "assets/fonts/SpaceMono-Regular.ttf",
+      "sha1": "fae3a5a43b50e0408fd61e14383d94a023d332b0"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  h1 {
+    margin-bottom: 21px;
+    text-align: center;
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+
+.inner {
+  padding: 33px 33px 55px;
+  border-radius: 20px;
+  max-width: 816px;
+  width: 100%;
+  background: #0F0F0F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  max-width: 351px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & > * {
+    width: 100%;
+  }
+  & > *:not(:first-child) {
+    margin-top: 20px;
+  }
+  & > *:last-child {
+    margin-top: 32px;
+    width: 70%;
+  }
+}

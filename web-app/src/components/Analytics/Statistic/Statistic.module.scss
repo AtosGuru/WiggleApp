@@ -1,0 +1,27 @@
+.statistic {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 32px;
+}
+
+@media (max-width: 1366px) {
+  .statistic {
+    margin-top: 20px;
+    grid-gap: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .statistic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .statistic {
+    display: flex;
+    flex-direction: column;
+  }
+}

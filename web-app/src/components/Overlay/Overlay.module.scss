@@ -1,0 +1,19 @@
+.overlay {
+  background: rgba(0, 0, 0, 0.80);
+  backdrop-filter: blur(2px);
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease .1s;
+}
+
+.open {
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0s;
+}

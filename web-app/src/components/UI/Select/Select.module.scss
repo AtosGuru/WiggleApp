@@ -1,0 +1,165 @@
+.select {
+  position: relative;
+  flex: 1;
+  z-index: 10;
+  transition-delay: .3s;
+}
+
+.open {
+  z-index: 100;
+  transition-delay: 0s;
+  .current {
+    border-radius: 6px 6px 0 0;
+  }
+  .icon {
+    transform: rotate(-180deg);
+  }
+  .list {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.selectLarge {
+  .current {
+    padding: 2px 21px 4px 22px;
+  }  
+  .list {
+    padding: 24px 32px 36px;
+  }
+  .item {
+    font-size: 16px;
+    &::before {
+      font-size: 16px;
+    }
+  }
+}
+
+.selectSmall {
+  width: 150px;
+  flex: none;
+  .current {
+    width: 100%;
+    padding: 2px 15px;
+  }
+  .text {
+    text-align: center;
+    width: 100%;
+  }
+  .list {
+    padding: 5px 10px 15px;
+  }
+  .item {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    &::before {
+      font-size: 10px;
+      text-align: center;
+    }
+  } 
+}
+
+.current {
+  border-radius: 6px;
+  background: var(--sec-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: border-radius .2s ease;
+}
+
+.text {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+.icon {
+  width: 13px;
+  height: 7px;
+  margin-left: 10px;
+  transition: transform .2s ease;
+  svg {
+    fill: #fff;
+  }
+}
+
+.list {
+  background: var(--sec-bg-color);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  border-radius: 0 0 6px 6px;
+  transition: all .2s ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.item {
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  @media (hover: hover) {
+    transition: color .2s ease;
+  }
+  @media (hover: none) {
+    transition: color .1s ease;
+  }
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: var(--garient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0;
+    @media (hover: hover) {
+      transition: opacity .2s ease;
+    }
+    @media (hover: none) {
+      transition: opacity .1s ease;
+    }
+  }
+  @media (hover: hover) {
+    &:hover {
+      color: transparent;
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      color: transparent;
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.active {
+  color: transparent;
+  &::before {
+    opacity: 1;
+  }
+}
+
+.item + .item  {
+  margin-top: 16px;
+}

@@ -1,0 +1,35 @@
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px 20px;
+  & > * {
+    &:nth-child(1) {
+      width: calc(50% - 10px);
+    }
+    &:nth-child(2) {
+      width: calc(50% - 10px);
+    }
+    &:nth-child(n + 3) {
+      width: calc(100% - 10px);
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .dashboard  {
+    gap: 15px 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dashboard {
+    & > * {
+      &:nth-child(1) {
+        width: 100%;
+      }
+      &:nth-child(2) {
+        width: 100%;
+      }
+    }
+  }
+}

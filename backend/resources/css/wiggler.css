@@ -1,0 +1,113 @@
+/*! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com*/
+
+:root {
+	--colors-brand-600: rgb(255, 123, 2);
+	--colors-brand-500: rgb(255, 203, 82);
+	--colors-primary-600: 255, 203, 162;
+	--colors-primary-500: 255, 203, 82;
+	--colors-primary-400: 255, 123, 2;
+	--colors-gray-1000: 37, 37, 37;
+	--colors-gray-900: 25, 25, 25;
+	--colors-gray-800: 13, 13, 13;
+	--colors-gray-600: 255, 255, 255;
+	--colors-gray-500: 255, 255, 255;
+	--colors-sky-900: 0, 0, 0;
+	--colors-sky-600: 255, 123, 2;
+}
+
+[data-testid="content"]>:first-child {
+	background: rgb(13, 13, 13);
+	min-height: calc(100vh - 3.5rem);
+}
+
+#nova > div > header {
+	background: #000;
+	border-bottom-width: 0;
+}
+@media (min-width:1000px) {
+	#nova > div > header a>span>svg {
+		display: none;
+	}
+}
+.max-w-xxs {
+	max-width: 16rem;
+}
+.max-w-xxs > .border-b {
+	background: #000;
+	border-bottom-width: 0;
+}
+.max-w-xxs a.h-12 {
+	height: 8.5rem;
+	justify-content: center;
+}
+.max-w-xxs a>span>svg {
+	height: 80px;
+}
+
+.sidebar-menu {
+	padding: 6em .7em 3em;
+	margin: -2.3em -.75em;
+	background: #000;
+	border-radius: 0 0 50% 50%/5% ;
+	text-align: center;
+}
+[data-testid="content"] .sidebar-menu:before {
+	content: url("/logo.svg");
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.overflow-x-auto .sidebar-menu {
+	padding-left: .75rem;
+	padding-top: .75rem;
+	padding-right: .75rem;
+	margin: 0;
+}
+
+.inertia-link-active {
+	background: linear-gradient(91.73deg, #ffcb52 0%, #ff7b02 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.inertia-link-active .rounded-full {
+	-webkit-text-fill-color: initial;
+}
+
+.sidebar-section:has([aria-expanded="true"]){
+	border-radius: 0.5rem;
+	background-color: rgb(var(--colors-gray-1000));
+}
+
+.rounded {
+	border-radius: 0.625rem;
+}
+
+/***********************************************************/
+
+.wiggle-customer_card_img {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	background-color: rgba(var(--colors-gray-400));
+	text-align: center;
+}
+.wiggle-customer_card_menu-toggle {
+	tab-index: 1;
+}
+.wiggle-customer_card_menu {
+	display: none;
+	top: calc(100% + 0.75rem);
+	right: 0;
+	width: 10rem;
+}
+.wiggle-customer_card_menu-toggle:hover .wiggle-customer_card_menu,
+.wiggle-customer_card_menu-toggle:focus .wiggle-customer_card_menu,
+.wiggle-customer_card_menu-toggle:focus-within .wiggle-customer_card_menu{
+	display: block;
+
+}

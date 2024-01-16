@@ -1,0 +1,45 @@
+.checkbox {
+  overflow: hidden;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  left: -99999em;
+}
+
+.input:checked + .icon {
+  background: #686868;
+  svg {
+    opacity: 1;
+  }
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  border: 1px solid #686868;
+  border-radius: 4px;
+  transition: background .2s ease;
+  svg {
+    opacity: 0;
+    transition: opacity .2s ease;
+  }
+}
+
+.text {
+  user-select: none;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}

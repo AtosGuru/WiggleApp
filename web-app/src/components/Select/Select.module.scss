@@ -1,0 +1,21 @@
+.select {
+  max-width: 370px;
+  width: 100%;
+  padding: 41px 63px 44px;
+  h3 {
+    max-width: 162px;
+    margin: 0 auto 25px;
+    text-align: center;
+    line-height: 18px;
+  }
+}
+.btns {
+  display: flex;
+  & > * {
+    width: 50%;
+    width: 110px;
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+}

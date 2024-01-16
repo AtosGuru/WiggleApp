@@ -1,0 +1,9 @@
+export { default as en } from './en.json' //english
+export { default as de } from './de.json' //deutschland
+export { default as dk } from './dk.json' //denmark
+export { default as es } from './es.json' //spain
+export { default as fr } from './fr.json' //france
+export { default as it } from './it.json' //italy
+export { default as nl } from './nl.json' //netherlands
+export { default as no } from './no.json' //norway
+export { default as se } from './se.json' //sweden

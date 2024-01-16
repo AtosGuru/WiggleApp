@@ -1,0 +1,41 @@
+.greet {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  padding-left: var(--sidebar-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btns {
+  max-width: 330px;
+  width: 100%;
+  button {
+    width: 100%;
+    &:not(:first-child) {
+      margin-top: 17px;
+    }
+  }
+}

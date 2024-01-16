@@ -1,0 +1,28 @@
+.messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    margin-bottom: 8px;
+  }
+  & > *:nth-child(2) {
+    width: var(--chat-width);
+    margin-bottom: 21px;
+  }
+  & > *:nth-child(3) {
+    height: calc(100vh - var(--main-pad-top) - 9px - 56px - 21px - var(--main-pad-bot) - 32px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .messages {
+    h1 {
+      & + * {
+        display: none;
+      }
+    }
+    & > *:nth-child(3) {
+      height: calc(100vh - var(--main-pad-top) - 9px - var(--main-pad-bot) - 32px);
+    }
+  }
+}

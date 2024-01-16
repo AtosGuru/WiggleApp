@@ -1,0 +1,19 @@
+.controls {
+  background: var(--main-bg-color);
+  border-radius: 17px;
+  padding: 22px 40px 28px 30px;
+  display: flex;
+  flex-direction: column;
+  & > h3 {
+    margin-bottom: 9px;
+  }
+  button {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 1366px) {
+  .controls {
+    padding: 20px 15px;
+  }
+}

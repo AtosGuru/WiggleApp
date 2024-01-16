@@ -1,0 +1,458 @@
+.createEventGeneral {
+  padding: 22px 40px 28px 30px;
+  width: var(--create-event-general-width);
+  background: #171717;
+  border-radius: 17px;
+  & > h3 {
+    margin-bottom: 9px;
+  }
+}
+
+.createNew {
+  padding: 45px 64px 42px 48px;
+  width: var(--create-event-new-width);
+  & > h3 {
+    margin-bottom: 26px;
+  }
+}
+
+.createNewBtns {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  & > button {
+    width: calc(45% - 49px);
+  }
+}
+
+.createNewLabel {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.createNewInner {
+  display: flex;
+  gap: 110px;
+}
+
+.createNewSide {
+  & > * {
+    &:not(:first-child) {
+      margin-top: 35px;
+    }
+  }
+  &:nth-child(1) {
+    width: 45%;
+    & > div:nth-last-of-type(3) > div {
+      max-width: 100px;
+    }
+  }
+  &:nth-child(2) {
+    width: 55%;
+    textarea {
+      height: 100px;
+    }
+  }
+}
+
+.createNewDate {
+  display: flex;
+  gap: 17px;
+  position: relative;
+  z-index: 10;
+  & > * {
+    width: 50%;
+  }
+}
+
+.createNewDatepicker,
+.createTemplateDatepicker {
+  border-radius: 10px;
+  padding: 40px 35px;
+  position: absolute;
+  width: fit-content;
+  background: var(--sec-bg-color);
+  z-index: 100;
+  box-shadow: 0 0 30px rgba(black, .4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+
+.createNewDatepicker {
+  right: 0;
+  top: 50%;
+  transform: translate(80%, -40%);
+}
+
+.createTemplateDatepicker {
+  left: 100%;
+  top: 0;
+  transform: translate(23px, -42px);
+}
+
+.createEventDatepickerOpen {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.createNewDateBtn {
+  height: 57px;
+  border-radius: 6px;
+  background: var(--sec-bg-color) !important;
+  display: flex !important;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (hover: hover) {
+  .createNewDateBtn {
+    transition: background .2s ease;
+  }
+  .createNewDateBtn:hover {
+    background: #686868 !important;
+  }
+}
+
+@media (hover: none) {
+  .createNewDateBtn {
+    transition: background .1s ease;
+  }
+  .createNewDateBtn:active {
+    background: #686868 !important;
+  }
+}
+
+.createNewDateBtnOpen {
+  background: #686868 !important;
+}
+
+.createNewDateIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+
+.createNewDateText {
+  font-size: 16px;
+  line-height: 34.5px;
+}
+
+.createNewTime {
+  display: flex;
+  align-items: center;
+  & > div {
+    &:nth-of-type(2) {
+      align-self: flex-end;
+      order: 2;
+    }
+  }
+}
+
+.createNewSeparator {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 0 18px;
+  transform: translateY(18px);
+}
+
+.createNewList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.createNewPhoto {
+  padding-bottom: 35%;
+  width: calc(50% - 15px);
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  background: var(--sec-bg-color);
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.createNewControls {
+  position: absolute;
+  right: 10px;
+  z-index: 2;
+  top: 15px;
+  display: flex;
+}
+
+.createNewPhotoIcon + .createNewPhotoIcon {
+  margin-left: 10px;
+}
+
+.createNewPhotoIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background: var(--sec-bg-color);
+  border-radius: 50%;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--garient-color);
+    opacity: 0;
+    @media (hover: hover) {
+      transition: opacity .2s ease;
+    }
+    @media (hover: none) {
+      transition: opacity .1s ease;
+    }
+  }
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+  }
+  input {
+    position: absolute;
+    left: -24px;
+  }
+  @media (hover: hover) {
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+  @media (hover: none) {
+    &:active::before {
+      opacity: 1;
+    }
+  }
+}
+
+.createTemplate {
+  width: var(--create-event-template-width);
+  padding: 45px 31px 57px 29px;
+  & > h3 {
+    margin-bottom: 13px;
+  }
+}
+
+.createTemplateFilter {
+  position: relative;
+  display: inline-block;
+}
+
+.createTemplateBtn {
+  display: flex;
+  align-items: center;
+  padding: 18px 12px 19px 22px;
+  background: var(--sec-bg-color);
+  border-radius: 6px;
+  margin-bottom: 22px;
+}
+
+@media (hover: hover) {
+  .createTemplateBtn {
+    transition: background .2s ease;
+  }
+  .createTemplateBtn:hover {
+    background: #686868 !important;
+  }
+}
+
+@media (hover: none) {
+  .createTemplateBtn {
+    transition: background .1s ease;
+  }
+  .createTemplateBtn:active {
+    background: #686868 !important;
+  }
+}
+
+.createTemplateBtnOpen {
+  background: #686868 !important;
+}
+
+.createTemplateIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+
+.createTemplateText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.createTemplateList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.createTemplateItem {
+  width: calc(25% - 17px);
+  display: flex;
+  flex-direction: column;
+  padding: 15px 13px 21px;
+  border-radius: 20px;
+  background: var(--sec-bg-color);
+}
+
+.createTemplatePreview {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.createTemplateName {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 13px;
+}
+
+.createTemplateToolbar {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.createTemplateDate {
+  display: flex;
+  align-items: center;
+}
+
+.createTemplateDateIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+
+.createTemplateDateText {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  background: var(--garient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.createTemplateItemBtn {
+  border-radius: 4px;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  line-height: 18px;
+  background: #686868 !important;
+  padding: 3px 22px 3px 17px !important;
+}
+
+@media (max-width: 1440px) {
+  .createNewInner {
+    gap: 30px;
+  }
+  .createNewSide {
+    width: 50% !important;
+  }
+  .createNewBtns {
+    & > button {
+      width: calc(50% - 15px);
+    }
+  }
+  .createNewList {
+    gap: 14px;
+  }
+  .createNewPhoto {
+    width: calc(50% - 7px);
+  }
+  .createTemplateList {
+    gap: 14px;
+  }
+  .createTemplateItem {
+    width: calc(25% - 11px);
+  }
+}
+
+@media (max-width: 1366px) {
+  .createTemplateItem {
+    width: calc((100% / 3) - 11px);
+  }
+}
+
+@media (max-width: 768px) {
+  .createEventGeneral,
+  .createNew {
+    width: 100%;
+  }
+  .createNewInner {
+    gap: 35px;
+    flex-wrap: wrap;
+  }
+  .createNewSide {
+    width: 100% !important;
+  }
+  .createNewBtns {
+    gap: 25px;
+    & > button {
+      width: 100%;
+    }
+  }
+  .createNewTime {
+    & > div {
+      width: 50%;
+    }
+  }
+  .createTemplateItem {
+    width: calc(50% - 11px);
+  }
+  .createTemplateDatepicker {
+    padding: 0;
+    left: 0;
+    top: 100%;
+    transform: translate(0, 0);
+  }
+  .createNewDatepicker {
+    left: auto;
+    right: 0;
+    padding: 0;
+    top: 100%;
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 480px) {
+  .createNew {
+    padding: 45px 30px;
+  }
+  .createTemplateItem {
+    width: 100%;
+  }
+}
